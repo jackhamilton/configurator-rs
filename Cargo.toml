@@ -1,0 +1,18 @@
+[package]
+name = "toml-configurator"
+version = "0.1.0"
+edition = "2024"
+license = "Unlicense"
+authors = ["Jack Hamilton jackham800@gmail.com"]
+keywords = ["TOML, CLI"]
+categories = ["Configuration"]
+repository = "https://github.com/jackhamilton/configurator-rs"
+description = "Creates and manages a config.toml based on a provided configuration struct."
+
+[lib]
+crate-type = ["lib"]
+
+[dependencies]
+serde = { version = "1.0.219", features = ["derive"] }
+shellexpand = "3.1.1"
+toml = "0.9.4"
