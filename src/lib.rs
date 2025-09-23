@@ -3,6 +3,9 @@ use std::{fs, path::Path, io};
 use freezable_trait::Freezable;
 use toml::Table;
 
+#[cfg(test)]
+mod tests;
+
 pub fn get_config<Config: Freezable + std::default::Default>(program_name: String) -> Config {
     setup_or_load_config_file(program_name, Config::default())
 }

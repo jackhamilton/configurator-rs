@@ -1,0 +1,103 @@
+cache_file_location = "~/.config/themester/.themecache"
+
+term_env_var_name = "TERM_THEME"
+nvim_plugin_env_var_name = "NVIM_THEME_PLUGIN"
+nvim_theme_env_var_name = "NVIM_THEME"
+
+write_term_lua = true
+term_lua_path = "~/.config/wezterm/dynamic_theme.lua"
+
+[[theme]]
+term = "tokyonight-night"
+nvim_plugin = "tokyonight"
+nvim_themename = "tokyonight-night"
+
+[[theme]]
+term = "toykonight_moon"
+nvim_plugin = "tokyonight"
+nvim_themename = "tokyonight-moon"
+
+[[theme]]
+term = "toykonight_storm"
+nvim_plugin = "tokyonight"
+nvim_themename = "tokyonight-storm"
+
+[[theme]]
+term = "catppuccin-frappe"
+nvim_plugin = "catppuccin"
+nvim_themename = "catppuccin-frappe"
+
+[[theme]]
+term = "catppuccin-macchiato"
+nvim_plugin = "catppuccin"
+nvim_themename = "catppuccin-macchiato"
+
+[[theme]]
+term = "catppuccin-mocha"
+nvim_plugin = "catppuccin"
+nvim_themename = "catppuccin-mocha"
+
+[[theme]]
+term = "GruvboxDark"
+nvim_plugin = "gruvbox-material" # none?
+nvim_themename = "gruvbox"
+
+[[theme]]
+term = "Gruvbox Dark (Gogh)"
+nvim_plugin = "gruvbox-material"
+nvim_themename = "gruvbox-material"
+
+[[theme]]
+term = "nightfox"
+nvim_plugin = "nightfox"
+nvim_themename = "nightfox"
+
+[[theme]]
+term = "rose-pine"
+nvim_plugin = "rose-pine"
+nvim_themename = "rose-pine"
+
+[[theme]]
+term = "Kanagawa (Gogh)"
+nvim_plugin = "kanagawa"
+nvim_themename = "kanagawa-wave"
+
+# [[theme]]
+# term = "Kanagawa Dragon (Gogh)"
+# nvim_plugin = "kanagawa"
+# nvim_themename = "kanagawa-dragon"
+
+[[theme]]
+term = "Everblush"
+nvim_plugin = "everblush"
+nvim_themename = "everblush"
+
+[[theme]]
+term = "Sonokai (Gogh)"
+nvim_plugin = "none"
+nvim_themename = "sonokai"
+
+[[theme]]
+term = "Edge Dark (base16)"
+nvim_plugin = "none" # none
+nvim_themename = "edge"
+
+[[theme]]
+term = "firewatch"
+nvim_plugin = "flow"
+nvim_themename = "flow"
+
+[[theme]]
+term = "nordfox"
+nvim_plugin = "nightfox"
+nvim_themename = "nightfox"
+
+# [[theme]]
+# term = "Solarized Dark (Gogh)"
+# nvim_plugin = "solarized-osaka"
+# nvim_themename = "solarized-osaka"
+
+# [[theme]]
+# term = "kanagawabones"
+# nvim_plugin = "kanagawa-paper"
+# nvim_themename = "kanagawa-paper"
