@@ -280,7 +280,7 @@ dependencies = [
 
 [[package]]
 name = "toml-configurator"
-version = "0.2.2"
+version = "0.2.3"
 dependencies = [
  "configurator-macros",
  "freezable-trait",

@@ -3,6 +3,8 @@ use std::{fs, path::Path, io};
 use freezable_trait::Freezable;
 use toml::Table;
 
+pub use configurator_macros;
+
 #[cfg(test)]
 mod tests;
 
@@ -18,11 +20,10 @@ fn setup_or_load_config_file<Config: Freezable>(program_name: String, default_co
 
     let config_path = Path::new(&config_path_string);
     let config_file_exists = fs::metadata(config_path).is_ok();
-    if !dir_exists {
-        if let Err(why) = fs::create_dir(dir_path) {
+    if !dir_exists
+        && let Err(why) = fs::create_dir(dir_path) {
             println!("! {:?}", why.kind());
         }
-    }
     if !config_file_exists {
         touch(config_path).unwrap_or_else(|why| {
             println!("! {:?}", why.kind());
