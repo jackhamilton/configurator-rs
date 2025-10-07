@@ -14,11 +14,11 @@ config_builder! {
     ],
 }
 
-#[derive(Clone, Debug)]
+#[derive(Debug)]
 #[freezable]
 struct Theme {
     term: String,
-    nvim_plugin: String,
+    nvim_plugin: Option<String>,
     nvim_themename: String,
 }
 
@@ -26,8 +26,9 @@ impl Default for Theme {
     fn default() -> Self {
         Self {
             term: "plugin-name".into(),
-            nvim_plugin: "nvim-plugin-name".into(),
-            nvim_themename: "nvim-plugin-colorscheme".into()
+            nvim_plugin: None,
+            nvim_themename: "nvim-plugin-colorscheme".into(),
+            _unknown_fields: [].into(),
         }
     }
 }
