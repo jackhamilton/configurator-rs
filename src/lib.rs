@@ -1,6 +1,7 @@
 use std::fs::OpenOptions;
 use std::{fs, path::Path, io};
-use freezable_trait::Freezable;
+pub use freezable_trait::Freezable;
+pub use freezable_trait::freezable;
 use toml::Table;
 
 pub use configurator_macros;
