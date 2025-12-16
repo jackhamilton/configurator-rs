@@ -1,5 +1,11 @@
 Makes adding a configuration file to a rust program trivial.
 
+Available via cargo:
+
+```zsh
+cargo add toml-configurator
+```
+
 # Features
 - Automatically manages file in ~/.config/\[program_name\]
 
