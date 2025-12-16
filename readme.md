@@ -29,7 +29,7 @@ config_builder! {
 }
 
 fn main() {
-    println!("{}" config.example_field); // Prints '67' if you haven't changed the file, or whatever int you have in there if you have.
+    println!("{}" CONFIG.example_field); // Prints '67' if you haven't changed the file, or whatever int you have in there if you have.
 }
 ```
 
