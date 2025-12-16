@@ -15,9 +15,9 @@ If such a file doesn't exist, one will be created with the fields initialized to
 
 Configuration properties can be accessed via CONFIG.\[field], for example CONFIG.example_field in the below snippet.
 
-- Configs implement freezable-trait
+- Configs implement [freezable](https://github.com/jackhamilton/fireezable)
 
-This is another project of mine, all this means is that the given struct can be easily serialized and deserialized without messing with serde. Trait provides write_to_file() and from_file() methods, alongside to and from string methods. [https://github.com/jackhamilton/freezable] for more information.
+This is another project of mine, all this means is that the given struct can be easily serialized and deserialized without messing with serde. Trait provides write_to_file() and from_file() methods, alongside to and from string methods. [Visit the repository](https://github.com/jackhamilton/fireezable) for more information.
 
 
 ``` rust
