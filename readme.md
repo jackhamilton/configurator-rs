@@ -2,14 +2,17 @@ Makes adding a configuration file to a rust program trivial.
 
 # Features
 - Automatically manages file in ~/.config/\[program_name\]
-If such a file doesn't exist, one will be created with the fields initialized to their default values.
-If the file exists, but some fields are not there, it won't be touched but missing fields will be read
-as their default values.
+
+If such a file doesn't exist, one will be created with the fields initialized to their default values. If the file exists, but some fields are not there, it won't be touched but missing fields will be read as their default values.
+
 - Creates static lazy-locked property containing config values read at launch
+
 Configuration properties can be accessed via CONFIG.\[field], for example CONFIG.example_field in the below snippet.
+
 - Configs implement freezable-trait
-This is another project of mine, all this means is that the given struct can be easily serialized and deserialized
-without messing with serde. Trait provides write_to_file() and from_file() methods, alongside to and from string methods.
+
+This is another project of mine, all this means is that the given struct can be easily serialized and deserialized without messing with serde. Trait provides write_to_file() and from_file() methods, alongside to and from string methods. [https://github.com/jackhamilton/freezable] for more information.
+
 
 ``` rust
 // This macro will create a file, ~/.config/program_name/config.toml with these properties set to their defaults.
