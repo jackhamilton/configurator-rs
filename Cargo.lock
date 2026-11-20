@@ -4,9 +4,9 @@ version = 4
 
 [[package]]
 name = "configurator-macros"
-version = "0.3.1"
+version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1224ab37fff7c66240ab302064f320b545b334c2839467fe71c5f57e3151fd64"
+checksum = "9ac7b0a5a50dd2e552706141f093f9293315c4f6bc60757b2e697316558476d5"
 dependencies = [
  "proc-macro-crate",
  "proc-macro2",
