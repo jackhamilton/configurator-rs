@@ -25,7 +25,13 @@ This is another project of mine, all this means is that the given struct can be 
 // Changes to this file will be reflected in the value of the macro-created CONFIG static.
 config_builder! {
     example_field: i32 = 67,
-    another_field: String = "test".to_string()
+    another_field: String = "test"
+
+    // You can do TOML-style sections like this
+    example_section {
+        // Leaving off the initializer means it'll get a default value
+        some_field: String
+    }
 }
 
 fn main() {
